@@ -186,41 +186,6 @@ ServerEvents.recipes(e => {
     let kj = (id) => `kubejs:${id}`;
     let bl = (id) => `blockus:${id}`;
 
-    // -- CENTRIFUGE REMOVED RECIPES -- //
-    const REMOVED_RECIPES = [
-        sp('pedestal/tier3/bottle_of_failing')
-    ];
-    REMOVED_RECIPES.forEach(id => e.remove({id: id}));
-
-    // -- BOTTLE OF FAILING -- //
-    e.custom({
-        type: sp('pedestal'),
-        time: 800,
-        tier: 'advanced',
-        cyan: 1,
-        magenta: 1,
-        yellow: 1,
-        black: 1,
-        white: 0,
-        experience: 2.0,
-        pattern: [
-            'FSF',
-            'EBE',
-            'FSF'
-        ],
-        key: {
-            S: { item: sp('stratine_fragments') },
-            F: { item: mc('fermented_spider_eye') },
-            E: { item: mc('ender_eye') },
-            B: { item: mc('experience_bottle') }
-        },
-        result: {
-            item: sp('bottle_of_failing'),
-            count: 1
-        },
-        required_advancement: sp('progression/unlock_bottle_of_failing')
-    });
-
     // -- MAGIC DIAMOND -- //
     e.custom({
         id: st('magic_diamond'),
@@ -294,4 +259,39 @@ ServerEvents.tags('block', e => {
     let sp = (id) => `spectrum:${id}`;
 
     e.add('c:lapis_ores', sp('blackslag_lapis_ore'))
+});
+
+// Recipe modification
+ServerEvents.recipes(e => {
+    // -- MOD NAMESPACE UTILITY FUNCTIONS -- // 
+    let sp = (id) => `spectrum:${id}`;
+    let mi = (id) => `modern_industrialization:${id}`;
+    let mc = (id) => `minecraft:${id}`;
+    
+    // -- SPECTRUM BUDS AND CLUSTER ANVIL CRUSHING WITHOUT INGOT OUTPUT
+    const CHANGE_INGOT_TO_DUST = [
+        'copper',
+        'gold',
+        'iron'
+    ];
+    
+    //buds
+    CHANGE_INGOT_TO_DUST.forEach(data => {
+        e.forEachRecipe( { type: sp('anvil_crushing'), input: sp(`small_${data}_bud`), mod: 'spectrum'}, recipe => {
+            var recipeId = sp(`anvil_crushing/crystallarieum_growables/${data}_from_buds`);
+            var recipeJson = JSON.parse(recipe.json);
+            recipeJson.result =  { item: mi(`${data}_dust`), count: 1.0 };
+            e.custom(recipeJson).id(recipeId);
+        });
+    });
+    
+    //clusters
+    CHANGE_INGOT_TO_DUST.forEach(data => {
+        e.forEachRecipe( { type: sp('anvil_crushing'), input: sp(`${data}_cluster`), mod: 'spectrum'}, recipe => {
+            var recipeId = sp(`anvil_crushing/crystallarieum_growables/${data}_from_cluster`);
+            var recipeJson = JSON.parse(recipe.json);
+            recipeJson.result =  { item: mi(`${data}_dust`), count: 6.0 };
+            e.custom(recipeJson).id(recipeId);
+        });
+    });
 });

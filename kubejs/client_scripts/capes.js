@@ -17,6 +17,7 @@ CapeJS.addCapes(e => {
     e.register("ec680660-4299-40b4-9c5f-8b18cdb42407", "contributor");                  // gronkDev
     e.register("f840de64-3445-4506-b75b-8fe61fd32e17", "contributor");                  // Sevudien (kevintok)
     e.register("1766fb04-3569-4099-b420-9e3006c206bb", "contributor");                  // EntityInArray (cyberplebian)
+    e.register("a8a0ab05-5edb-42ef-bc3d-4db7b49d83da", "contributor");                  // dimikron (DmitryProskurin)
 
     // -- SUPPORTER -- //
     e.register("ce2ad8ee-6523-4fee-aa6b-8f724e21463a", "supporter");                    // Michi12332323 (michiderechte)
@@ -70,7 +71,7 @@ CapeJS.addCapes(e => {
     e.register("5c161f82-f554-4a81-a626-9af17d608acf", "pack_completionist");           // Retaelous
     e.register("5dc25de3-6ae7-4b62-a897-9e7d5aac1589", "pack_completionist");           // Troinen
     e.register("9618faf4-9759-4ab6-ba84-efec7fee6fb5", "pack_completionist");           // kpvw (Water Face)
-	e.register("61b883c4-06d2-4e38-a926-e2c03e7fdea6", "pack_completionist");			// sreny1 (sreny)
+    e.register("61b883c4-06d2-4e38-a926-e2c03e7fdea6", "pack_completionist");		    // sreny1 (sreny)
     e.register("b53f5bf3-dcd1-4ace-accf-5af46a14199e", "pack_completionist");           // niko (wizzahd)
     e.register("fe61819a-2333-4611-ae43-c599ab46c290", "pack_completionist");           // LordTet
     e.register("b5e220e6-175c-46bb-b9ae-33e4dfa5d3f4", "pack_completionist");           // Mokilicious (moki)
@@ -80,4 +81,30 @@ CapeJS.addCapes(e => {
     e.register("62a6f98e-fbe8-4d1d-8645-53ccdf6d910f", "pack_completionist");           // Hicaro
     e.register("19bc6152-8bae-4fa3-8333-b5b42fdf17b1", "pack_completionist");           // WaffleBagel (WeeabooWill)
     e.register("15a0ae95-4591-4262-b5c8-dda76d982a46", "pack_completionist");           // itsClaus
+    e.register("f6f608e9-cd46-4260-8feb-f2b741db69bc", "pack_completionist");           // Irisirl
+    e.register("dec8cf04-4596-4237-a296-253bb6fedfac", "pack_completionist");           // Skyecodes
+    e.register("96e516ec-dabb-46a5-a106-0de66035cd15", "pack_completionist");           // S4s4LU123
+    e.register("12bdf2de-ed57-45f9-985c-5fdddf57c6a6", "pack_completionist");           // KHthe8th
+    e.register("4f42dca4-05d2-4332-a8b7-74845109ad7a", "pack_completionist");           // velziee
+    e.register("199d1444-3884-4570-b7fc-9a8f38b7b918", "pack_completionist");           // PlayingAvecFire (Bailey)
+    e.register("27b2034e-dc97-4211-abde-8c286a73d742", "pack_completionist");           // xdg22 (Felin)
+    e.register("eb2caf79-3782-460e-ad1a-21791269f8d0", "pack_completionist");            // konto3 (RadziSzop)
+    e.register("8da83201-ec2f-4a20-83ea-5376bd0de477", "pack_completionist");           // Spaghettoo
+    e.register("10729fb4-7a23-4bd7-8a5c-6e985506a730", "pack_completionist");           // brek768 (Breck)
+    e.register("896a4155-10da-40c0-a5d5-895142436488", "pack_completionist");           // EpicLemon99
+    e.register("a85ff96e-cba8-4737-aed9-2250c8e7a54d", "pack_completionist");		    // _d_aniel (dani)
+    e.register("62efa14d-2610-4d22-9a60-4588d6736efd", "pack_completionist");		    // Renchon
+    e.register("d6330821-e3a3-4a84-a50b-fa886506b162", "pack_completionist");           // PurpleDino_
+    e.register("faff2979-b120-4da6-9fe8-ef8f57325ac6", "pack_completionist");            // Trevboar (Trevor)
+    e.register("b1e21e23-8ed1-4425-9d80-2fae43f6534f", "pack_completionist");            // Atrain_A (Atrain)
+    e.register("6fa139e9-c2fd-4de0-a8dc-ba6cf76b4c01", "pack_completionist");            // Pairosox (px)
+    e.register("362c62b0-ddd3-4c47-b659-96a560b37ef6", "pack_completionist");            // Ln_s1
+    e.register("df4a69a7-62e4-4e24-8f1e-e068de769591", "pack_completionist");            // is_daniel (MiDaLew)
+    e.register("cffabf8a-9b8a-428d-92ef-97157f350922", "pack_completionist");            // ZcoperDK (Zcoper)
+    e.register("cbfb459b-6ecd-4133-96c5-bef34d2582d4", "pack_completionist");            // 5pec (Zcoper)
+    e.register("3da9a67d-3e3c-4b27-8144-d9de8ca86466", "pack_completionist");            // _bloxy (Zcoper)
+    e.register("f200205f-7d80-4884-9030-47369b3d36fe", "pack_completionist");            // Kerbek_02 (MiDaLew)
+    e.register("e55c1334-d194-4eb5-9304-700000ac69e2", "pack_completionist");            // kil_lua (Malcom)
+    e.register("587f9071-4de8-4598-a6ee-7b3c47585904", "pack_completionist");            // kuchc1k (cube)
+    e.register("3122cedc-6d89-4173-9554-e782901baf22", "pack_completionist");            // fiveman2 (bread)
 });
