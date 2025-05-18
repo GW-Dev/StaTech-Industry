@@ -18,6 +18,7 @@ REIEvents.hide('item', e => {
     let vh = (id) => `vanilla-hammers:${id}`;
     let db = (id) => `decorative_blocks:${id}`;
     let kj = (id) => `kubejs:${id}`;
+    let pd = (id) => `promenade:${id}`
 
     const REI_DELETED_ITEMS = [
         ad('coal_generator'),
@@ -207,7 +208,8 @@ REIEvents.hide('item', e => {
         vh('obsidian_hammer'),
         vh('prismarine_hammer'),
         vh('quartz_hammer'),
-        vh('slime_hammer')
+        vh('slime_hammer'),
+        pd('mango')
     ];
     REI_DELETED_ITEMS.forEach(id => e.hide(id));
 });

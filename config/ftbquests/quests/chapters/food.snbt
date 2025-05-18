@@ -3007,22 +3007,6 @@
 			y: -8.0d
 		}
 		{
-			dependencies: ["0AD5A07A7E0C38D2"]
-			id: "203DB27E6970849C"
-			rewards: [{
-				id: "1003A8717D229284"
-				type: "xp"
-				xp: 10
-			}]
-			tasks: [{
-				id: "7F99DF4F51B67CD8"
-				item: "promenade:mango"
-				type: "item"
-			}]
-			x: 6.5d
-			y: -7.0d
-		}
-		{
 			dependencies: ["56E05DA40D28A66B"]
 			id: "6492A35C259D0C94"
 			rewards: [{
